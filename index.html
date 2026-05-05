@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="website">
-    <title>Simon Posluns Portfolio</title>
+    <meta name="description" content="Wildhearts Bluegrass - traditional bluegrass and old-time string band">
+    <title>Wildhearts Bluegrass</title>
     <link rel="stylesheet" href="tooplate-musician-style.css">
-
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container header-inner">
-            <a href="#" class="logo"></a>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
@@ -20,239 +18,147 @@
             </button>
             <nav class="nav" id="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Homepage</a></li
-                    <li><a href="music-lessons.html" class="nav-link">Music Lessons</a></li>
-                    <li><a href="teaching.html" class="nav-link">Teaching</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-<section class="hero" id="hero">
-    <div class="container">
-        <div class="hero-grid">
-            <div class="hero-content">
-                <p class="hero-tagline"></p>
-                <h1>Simon Posluns Music</h1>
-                <p class="hero-description">Banjo, Pedal Steel, Dobro</p>
-                
-
-                <div class="hero-two-column">
-                    <!-- Left Column - Audio Tracks -->
-                    <div class="hero-tracks">
-                        <span class="section-label">Sample Recordings</span>
-                
-                        <!-- Track 1 -->
-                        <div class="track-row">
-                            <div class="audio-player" id="audioPlayer1">
-                                <button class="audio-play-btn" id="playBtn1" aria-label="Play">
-                                    <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"/>
-                                    </svg>
-                                    <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
-                                        <rect x="6" y="4" width="4" height="16"/>
-                                        <rect x="14" y="4" width="4" height="16"/>
-                                    </svg>
-                                </button>
-                                <div class="audio-info">
-                                    <div class="audio-track-row">
-                                        <div class="audio-track-info">
-                                            <span class="audio-title">"Past in the Sun" by Mitchell Green (Victoria, BC)</span>
-                                            <span class="audio-artist">Instruments Played: Dobro, Pedal Steel, Banjo</span>
-                                        </div>
-                                    </div>
-                                    <div class="audio-progress-wrap">
-                                        <div class="audio-progress-bar" id="progressBar1">
-                                            <div class="audio-progress-bg"></div>
-                                            <div class="audio-progress" id="progress1"></div>
-                                            <div class="audio-progress-handle" id="progressHandle1"></div>
-                                        </div>
-                                        <div class="audio-time">
-                                            <span id="currentTime1">0:00</span>
-                                            <span id="duration1">0:00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <audio id="audio1" preload="auto">
-                                    <source src="audio/Mitchell Green_Past in the Sun.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="album-artwork">
-                                <img src="images_albums/August Moon.jpg" alt="Album artwork">
-                            </div>
-                        </div>
-
-                        <!-- Track 2 -->
-                        <div class="track-row">
-                            <div class="audio-player" id="audioPlayer2">
-                                <button class="audio-play-btn" id="playBtn2" aria-label="Play">
-                                    <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"/>
-                                    </svg>
-                                    <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
-                                        <rect x="6" y="4" width="4" height="16"/>
-                                        <rect x="14" y="4" width="4" height="16"/>
-                                    </svg>
-                                </button>
-                                <div class="audio-info">
-                                    <div class="audio-track-row">
-                                        <div class="audio-track-info">
-                                            <span class="audio-title">"The Vagrant" by Jeremy Hanlon (Shadowfax: Vancouver, BC)</span>
-                                            <span class="audio-artist">Instruments: Pedal Steel, Banjo</span>
-                                        </div>
-                                    </div>
-                                    <div class="audio-progress-wrap">
-                                        <div class="audio-progress-bar" id="progressBar2">
-                                            <div class="audio-progress-bg"></div>
-                                            <div class="audio-progress" id="progress2"></div>
-                                            <div class="audio-progress-handle" id="progressHandle2"></div>
-                                        </div>
-                                        <div class="audio-time">
-                                            <span id="currentTime2">0:00</span>
-                                            <span id="duration2">0:00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <audio id="audio2" preload="auto">
-                                    <source src="audio/Shadowfax - The Vagrant.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="album-artwork">
-                                <img src="images_albums/Shadowfax_Orpheus.jpg" alt="Album artwork">
-                            </div>
-                        </div>
-
-                        <!-- Track 3 -->
-                        <div class="track-row">
-                            <div class="audio-player" id="audioPlayer3">
-                                <button class="audio-play-btn" id="playBtn3" aria-label="Play">
-                                    <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"/>
-                                    </svg>
-                                    <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
-                                        <rect x="6" y="4" width="4" height="16"/>
-                                        <rect x="14" y="4" width="4" height="16"/>
-                                    </svg>
-                                </button>
-                                <div class="audio-info">
-                                    <div class="audio-track-row">
-                                        <div class="audio-track-info">
-                                            <span class="audio-title">"Summer Silence" by Leigh Wills (Bill Ricky: Halifax, NS)</span>
-                                            <span class="audio-artist">Instruments: Pedal Steel, Arrangement (Strings)  </span>
-                                        </div>
-                                    </div>
-                                    <div class="audio-progress-wrap">
-                                        <div class="audio-progress-bar" id="progressBar3">
-                                            <div class="audio-progress-bg"></div>
-                                            <div class="audio-progress" id="progress3"></div>
-                                            <div class="audio-progress-handle" id="progressHandle3"></div>
-                                        </div>
-                                        <div class="audio-time">
-                                            <span id="currentTime3">0:00</span>
-                                            <span id="duration3">0:00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <audio id="audio3" preload="auto">
-                                    <source src="audio/Bill Ricky - Summer Silence.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="album-artwork">
-                                <img src="images_albums/Bill Ricky.jpeg" alt="Album artwork">
-                            </div>
-                        </div>
-
-                        <!-- Track 4 -->
-                        <div class="track-row">
-                            <div class="audio-player" id="audioPlayer4">
-                                <button class="audio-play-btn" id="playBtn4" aria-label="Play">
-                                    <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"/>
-                                    </svg>
-                                    <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
-                                        <rect x="6" y="4" width="4" height="16"/>
-                                        <rect x="14" y="4" width="4" height="16"/>
-                                    </svg>
-                                </button>
-                                <div class="audio-info">
-                                    <div class="audio-track-row">
-                                        <div class="audio-track-info">
-                                            <span class="audio-title">"Spruce Moose" by Tom McGuire (Tom McGuire & the Brassoles: Glasgow, UK)</span>
-                                            <span class="audio-artist">Instruments: Dobro, Pedal Steel </span>
-                                        </div>
-                                    </div>
-                                    <div class="audio-progress-wrap">
-                                        <div class="audio-progress-bar" id="progressBar4">
-                                            <div class="audio-progress-bg"></div>
-                                            <div class="audio-progress" id="progress4"></div>
-                                            <div class="audio-progress-handle" id="progressHandle4"></div>
-                                        </div>
-                                        <div class="audio-time">
-                                            <span id="currentTime4">0:00</span>
-                                            <span id="duration4">0:00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <audio id="audio4" preload="auto">
-                                    <source src="audio/Tom McGuire - Spruce Moose.mp3" type="audio/mp3">
-                                </audio>
-                            </div>
-                            <div class="album-artwork">
-                                <img src="images_albums/Tom Mcguire.jpg" alt="Album artwork">
-                            </div>
-                        </div>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-banner">
+                        <img src="images-website/Widhearts-rabbit.png" alt="Wildhearts Bluegrass" class="hero-banner-image">
+                        <h1 class="hero-description">Wildhearts Bluegrass</h1>
                     </div>
 
-                <!-- Right Column - About Section (MOVE THIS INSIDE) -->
-                                    <div class="hero-about">
-                                        <div class="about-inline">
-                                            <div class="about-inline-grid">
-                                                <div class="about-inline-image">
-                                                    <img src="images_music/Bill Ricky psg.jpg" alt="Simon Posluns">
-                                                </div>
-                                                <div class="about-inline-text">
-                                                    <p>Multi-instrumentalist based out of Toronto, Ontario. Previous musical collaborations include <a href="https://ilovebillricky.bandcamp.com/album/bill-ricky" target="_blank" rel="noopener noreferrer"> Bill Ricky</a> (Nova Scotia),
-                                                        <a href="https://shadowfaxfolk.bandcamp.com/album/orpheus" target="_blank" rel="noopener noreferrer"> Shadowfax</a> (Vancouver), Hoss Mountain Stringband (Victoria)</p>
-                                                </div>
+                    <div class="hero-two-column">
+                        <!-- Left Column - Audio Tracks -->
+                        <div class="hero-tracks">
+                            <span class="section-label">Sample Recordings</span>
+
+                            <!-- Track 1 -->
+                            <div class="track-row">
+                                <div class="audio-player" id="audioPlayer1">
+                                    <button class="audio-play-btn" id="playBtn1" aria-label="Play">
+                                        <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"/>
+                                        </svg>
+                                        <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                            <rect x="6" y="4" width="4" height="16"/>
+                                            <rect x="14" y="4" width="4" height="16"/>
+                                        </svg>
+                                    </button>
+                                    <div class="audio-info">
+                                        <div class="audio-track-row">
+                                            <div class="audio-track-info">
+                                                <span class="audio-title">Brown Haired Women</span>
+                                                <span class="audio-artist">Wildhearts Bluegrass</span>
+                                            </div>
+                                        </div>
+                                        <div class="audio-progress-wrap">
+                                            <div class="audio-progress-bar" id="progressBar1">
+                                                <div class="audio-progress-bg"></div>
+                                                <div class="audio-progress" id="progress1"></div>
+                                                <div class="audio-progress-handle" id="progressHandle1"></div>
+                                            </div>
+                                            <div class="audio-time">
+                                                <span id="currentTime1">0:00</span>
+                                                <span id="duration1">0:00</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div> <!-- Close hero-two-column -->
-                            </div> <!-- Close hero-content -->
-                        </div> <!-- Close hero-grid -->
-                    </div> <!-- Close container -->
-                </section> <!-- Close hero section -->
+                                    <audio id="audio1" preload="auto">
+                                        <source src="audio/Brown Haired Women-48 khz.mp3" type="audio/mp3">
+                                    </audio>
+                                </div>
+                            </div>
+
+                            <!-- Track 2 -->
+                            <div class="track-row">
+                                <div class="audio-player" id="audioPlayer2">
+                                    <button class="audio-play-btn" id="playBtn2" aria-label="Play">
+                                        <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"/>
+                                        </svg>
+                                        <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                            <rect x="6" y="4" width="4" height="16"/>
+                                            <rect x="14" y="4" width="4" height="16"/>
+                                        </svg>
+                                    </button>
+                                    <div class="audio-info">
+                                        <div class="audio-track-row">
+                                            <div class="audio-track-info">
+                                                <span class="audio-title">Lounge Bar</span>
+                                                <span class="audio-artist">Wildhearts Bluegrass</span>
+                                            </div>
+                                        </div>
+                                        <div class="audio-progress-wrap">
+                                            <div class="audio-progress-bar" id="progressBar2">
+                                                <div class="audio-progress-bg"></div>
+                                                <div class="audio-progress" id="progress2"></div>
+                                                <div class="audio-progress-handle" id="progressHandle2"></div>
+                                            </div>
+                                            <div class="audio-time">
+                                                <span id="currentTime2">0:00</span>
+                                                <span id="duration2">0:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <audio id="audio2" preload="auto">
+                                        <source src="audio/Lounge Bar-44.1 khz.mp3" type="audio/mp3">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column - About -->
+                        <div class="hero-about">
+                            <div class="about-inline">
+                                <div class="about-inline-text">
+                                    <p>[Descrption1]</p>
+                                    <p>[Description2]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed" id="instagram">
+        <div class="container">
+            <span class="section-label">Follow Along</span>
+            <h2>@wildhearts.bluegrass</h2>
+
+            <behold-widget feed-id="3Ctj2VMP821rW0bkeCHN"></behold-widget>
+            <script>
+              (() => {
+                const d=document,s=d.createElement("script");s.type="module";
+                s.src="https://w.behold.so/widget.js";d.head.append(s);
+              })();
+            </script>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p class="footer-copyright">© 2026 Simon Posluns</p>
-                            <div class="social-links">
-                                <a href="https://www.youtube.com/@simonposlunsmusic"
-                                class="social-link"
-                                aria-label="YouTube"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                                    </svg>
-                                </a>
-
-                                <a href="https://www.instagram.com/simonposlunsmusic"
-                                class="social-link"
-                                aria-label="Instagram"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-                                    </svg>
-                                </a>
-                            </div>
+            <p class="footer-copyright">© 2026 Wildhearts Bluegrass</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/wildhearts.bluegrass/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <!-- JavaScript for navigation and audio player -->
     <script src="tooplate-musician-script.js"></script>
 </body>
 </html>

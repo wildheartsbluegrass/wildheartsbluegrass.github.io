@@ -8,15 +8,15 @@ https://www.tooplate.com/view/2155-modern-musician
 */
 :root {
 	/* Colors */
-	--color-primary: #5b7a8a;
-	--color-primary-light: #e8f0f3;
-	--color-primary-dark: #3d5561;
-	--color-text: #2c3e44;
-	--color-text-light: #5f7a84;
-	--color-bg: #fafcfd;
-	--color-bg-alt: #f0f5f7;
+	--color-primary: #C5988C;
+	--color-primary-light: #F7EEEC;
+	--color-primary-dark: #9E7A70;
+	--color-text: #2E2220;
+	--color-text-light: #7D5F58;
+	--color-bg: #D9AA98;
+	--color-bg-alt: #F5EDEB;
 	--color-white: #ffffff;
-	--color-border: #dce6ea;
+	--color-border: #E8D5D0;
 
 	/* Typography */
 	--font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -181,7 +181,7 @@ section {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(250, 252, 253, 0.95);
+	background-color: rgba(253, 249, 248, 0.95);
 	backdrop-filter: blur(8px);
 	z-index: 100;
 	border-bottom: 1px solid var(--color-border);
@@ -190,14 +190,28 @@ section {
 .header-inner {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	height: 4rem;
 }
 
 .logo {
-	font-family: var(--font-heading);
-	font-size: 1.25rem;
-	color: var(--color-text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	text-decoration: none;
+}
+
+.logo-image {
+	height: 30px;
+	width: auto;
+	display: block;
+}
+
+.logo-title {
+	height: 13px;
+	width: auto;
+	display: block;
 }
 
 .nav-list {
@@ -240,7 +254,15 @@ section {
 	align-items: center;
 	padding-top: 7rem;
 	padding-bottom: 0;
-	background-color: var(--color-bg);
+	background-color: #D9AA98;
+}
+
+.hero .section-label {
+	color: var(--color-text);
+}
+
+.hero .hero-description {
+	color: var(--color-text);
 }
 
 .hero-grid {
@@ -266,8 +288,28 @@ section {
 	margin-bottom: var(--space-sm);
 }
 
+.hero-banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: var(--space-lg);
+}
+
+.hero-banner-image {
+	height: clamp(200px, 30vw, 360px);
+	width: auto;
+	margin-bottom: var(--space-md);
+}
+
+.hero-banner-title {
+	height: clamp(60px, 12vw, 140px);
+	width: auto;
+	margin-bottom: var(--space-md);
+}
+
 .hero-description {
-	font-size: 1.125rem;
+	font-size: clamp(2.5rem, 5vw, 3.5rem);
 	color: var(--color-text-light);
 	margin-bottom: var(--space-md);
 	max-width: 100%;
@@ -1396,6 +1438,48 @@ section {
 }
 
 /* ===========================================
+           Instagram Feed Section
+           =========================================== */
+.instagram-feed {
+	background-color: var(--color-bg-alt);
+	padding: var(--space-lg) 0;
+	border-top: 1px solid var(--color-border);
+}
+
+.instagram-feed h2 {
+	margin-bottom: var(--space-md);
+}
+
+.instagram-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--space-sm);
+	margin-bottom: var(--space-md);
+}
+
+.instagram-post-placeholder {
+	aspect-ratio: 1;
+	background-color: var(--color-primary-light);
+	border-radius: var(--border-radius);
+	border: 1px solid var(--color-border);
+	transition: background-color 0.2s ease;
+}
+
+.instagram-post-placeholder:hover {
+	background-color: var(--color-border);
+}
+
+.instagram-cta {
+	display: inline-block;
+}
+
+@media (min-width: 640px) {
+	.instagram-grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+/* ===========================================
            Footer
            =========================================== */
 .footer {
@@ -1463,7 +1547,7 @@ section {
 		top: 4rem;
 		left: 0;
 		right: 0;
-		background-color: var(--color-bg);
+		background-color: #FDF9F8;
 		border-bottom: 1px solid var(--color-border);
 		padding: var(--space-md);
 		transform: translateY(-100%);

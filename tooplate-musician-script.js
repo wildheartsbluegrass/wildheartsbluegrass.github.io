@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
    }
 
    // Initialize all audio players (adjust the number based on how many tracks you have)
-   for (let i = 1; i <= 4; i++) {
+   for (let i = 1; i <= 2; i++) {
       initAudioPlayer(i);
    }
 });
