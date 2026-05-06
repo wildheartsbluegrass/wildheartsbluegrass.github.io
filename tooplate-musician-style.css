@@ -315,6 +315,14 @@ section {
 	max-width: 100%;
 }
 
+.hero-subheading {
+	font-size: clamp(1.25rem, 3vw, 2rem);
+	font-style: italic;
+	color: var(--color-text-light);
+	margin-top: calc(var(--space-md) * -0.5);
+	margin-bottom: var(--space-md);
+}
+
 .album-cover {
     width: 400px;  /* Smaller artwork */
     height: 400px;
@@ -854,7 +862,7 @@ section {
 }
 
 .about-inline-text p {
-    color: var(--color-text-light);
+    color: #000000;
     font-size: 1rem;
     margin-bottom: var(--space-sm);
 }
