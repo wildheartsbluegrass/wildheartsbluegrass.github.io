@@ -475,7 +475,7 @@ section {
 
 @media (min-width: 900px) {
 	.hero-grid {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		gap: var(--space-xl);
 	}
 
@@ -892,7 +892,8 @@ section {
 }
 
 .hero-video {
-    margin-bottom: var(--space-xl);
+    max-width: 900px;
+    margin: 0 auto var(--space-xl);
 }
 
 .video-responsive {
